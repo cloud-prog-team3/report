@@ -1,0 +1,10 @@
+apiVersion: prova.prova/v1alpha1
+kind: Instance
+metadata:
+  labels:
+    app.kubernetes.io/name: provaalertmanager
+    app.kubernetes.io/managed-by: kustomize
+  name: instance-sample
+spec:
+  name: instance-sample
+  

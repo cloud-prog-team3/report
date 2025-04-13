@@ -1,0 +1,19 @@
+{
+    "receiver": "local-controller",
+    "status": "firing",
+    "alerts": [
+      {
+        "status": "firing",
+        "labels": {
+          "alertname": "HighCPUUsage",
+          "severity": "critical",
+          "instance": "node1"
+        },
+        "annotations": {
+          "summary": "CPU usage is above 50%",
+          "description": "Node node1 has high CPU usage."
+        }
+      }
+    ]
+  }
+  

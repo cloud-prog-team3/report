@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: high-cpu-alert
+  namespace: monitoring
+  labels:
+    release: kind-prometheus  # <-- deve corrispondere a quello del tuo Prometheus (vedi lista charts helm)
+spec:
+  groups:
+    - name: cpu.rules
+      rules:
+        - alert: HighCPUUsage
+          expr: (sum(rate(container_cpu_usage_seconds_total{container!="",pod!=""}[1m])) BY (pod)) > 0.2
+          for: 2s
+          labels:
+            severity: warning
+          annotations:
+            summary: "High CPU usage on pod {{ $labels.pod }}"
+            description: "CPU usage is above 20% for more than 20 sec"
