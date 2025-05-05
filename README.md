@@ -13,4 +13,6 @@ This repo is intended to be a quick documentation and report about the work done
 - `31/03 - 06/04`: First architecture alternatives
 - `07/04 - 13/04`: Prometheus-stack installed; Achieved good capability to interact with PromQL, setting custom Alert rules;
 - `14/04 - 20/04`: Definition and tests of local development environment
-- `20/04 - 26-04`: 
+- `21/04 - 27-04`: Local deployment enviroment testing
+- `28/04 - 04-05`: Developed a demo implementation of the `InstanceInactiveController`.
+- `05/05 - 11-05`: 
