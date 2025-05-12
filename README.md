@@ -12,4 +12,7 @@ This repo is intended to be a quick documentation and report about the work done
 # REPORTS ACHIEVEMENTS
 - `31/03 - 06/04`: First architecture alternatives
 - `07/04 - 13/04`: Prometheus-stack installed; Achieved good capability to interact with PromQL, setting custom Alert rules;
-- `14/04 - 20/04`:
+- `14/04 - 20/04`: Defined final architecture of the project; setting local crownlabs environment
+- `21/04 - 28/04`: basic implementation of the termination mechanism
+- `05/05 - 11/05`: Refined logic for the termination mechanism
+- `12/05 - 18/05`: 
